@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.capgemini</groupId>
+    <artifactId>infra</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <repositories>
+        <repository>
+            <id>maven-central</id>
+            <name>mavenCentralRepo</name>
+            <url>https://mvnrepository.com/repos/central</url>
+        </repository>
+    </repositories>
+
+    <name>microservices_infra</name>
+    <description>Infrastructure project for Devonfw microservices.</description>
+
+    <!--
+      Modules:
+        - service-eureka: Is a service discovery, clients can be registered and can discover the instances of other clients
+        - service-zuul: Is a router and server side load balancer
+        - service-auth: Is an authentication/authorization service. Log in user and generates a json web token
+        - service-configserver: Is a cloud config server. Contains the common properties of all microservices
+
+     -->
+    <modules>
+        <module>service-zuul</module>
+        <module>service-a</module>
+        <module>service-b</module>
+        <module>admin-dashboard</module>
+        <module>hystrix-dashboard</module>
+    </modules>
+</project>

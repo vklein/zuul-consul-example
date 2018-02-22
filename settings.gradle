@@ -1,7 +1,0 @@
-rootProject.name = 'spring-cloud-consul-example'
-
-include "service-a"
-include "service-b"
-include "zuul"
-include "hystrix-dashboard"
-include "admin-dashboard"
