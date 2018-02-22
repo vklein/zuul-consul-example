@@ -15,4 +15,4 @@ It's contain
 
 ## Architecture Overview
 [](url "title")
-<img src="https://raw.githubusercontent.com/vklein/zuul-consul-example/master/screenshots/Architecture.png">
+<img src="https://raw.githubusercontent.com/vklein/zuul-consul-example/master/Architecture.png">
